@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PymeConecta - Tiendas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen fade-in">
+
+    <nav class="bg-blue-900 text-white shadow-md">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold tracking-wider">PymeConecta</a>
+            <div class="space-x-6 text-sm font-medium">
+                <a href="tiendas.html" class="hover:text-blue-300 transition">Ver Tiendas</a>
+                <a href="registro.html" class="bg-blue-600 hover:bg-blue-500 px-4 py-2 rounded-md transition shadow">Registrar Pyme</a>
+                <a href="#" class="hover:text-blue-300 transition">Ingresar</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="flex-grow max-w-6xl mx-auto w-full p-6 mt-8">
+        <div class="flex gap-4 mb-8">
+            <input type="text" placeholder="Barra de Busqueda de Productos/Tienda" class="flex-grow px-4 py-2 border border-gray-300 rounded-lg shadow-sm">
+            <button class="px-4 py-2 bg-white border border-gray-300 rounded-lg shadow-sm font-medium">Categorias</button>
+            <button class="px-4 py-2 bg-white border border-gray-300 rounded-lg shadow-sm font-medium">Ofertas</button>
+        </div>
+
+        <h1 class="text-3xl font-bold mb-6">Pymes en Puente Alto</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-white p-6 rounded-xl shadow-md border border-gray-200 space-y-4">
+                <p class="font-medium text-lg">📍 Minimarket Don Juan (INACAP Puente Alto)</p>
+                <p class="font-medium text-lg">📍 Artesanías El Sol (Puente Alto)</p>
+                <p class="font-medium text-lg">📍 Repuestos AutoMac (Puente Alto)</p>
+                <p class="font-medium text-lg">📍 Panadería La Central (Plaza de Puente Alto)</p>
+                <p class="text-blue-600 font-bold mt-4">+ DE 50 PYMES EN LA ZONA</p>
+            </div>
+            <div>
+                <div class="w-full h-64 map-placeholder rounded-xl shadow-inner flex items-center justify-center mb-4">
+                    <span class="text-slate-700 font-bold text-xl bg-white/80 px-4 py-2 rounded">[Mapa Interactivo API]</span>
+                </div>
+                <div class="bg-white p-4 rounded-xl border border-gray-200">
+                    <h4 class="font-bold mb-2">Sobre Nosotros:</h4>
+                    <p class="text-sm text-gray-500">Impulsando el comercio local mediante tecnología.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-400 text-center py-4 text-sm mt-auto">
+        &copy; 2026 PymeConecta
+    </footer>
+</body>
+</html>

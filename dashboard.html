@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PymeConecta - Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen fade-in">
+
+    <nav class="bg-blue-900 text-white shadow-md">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold tracking-wider">PymeConecta</a>
+        </div>
+    </nav>
+
+    <main class="flex-grow max-w-6xl mx-auto w-full p-6 mt-8">
+        
+        <div class="flex justify-between items-center mb-8 border-b pb-4">
+            <h1 class="text-3xl font-bold text-gray-800">Control de Inventario Local</h1>
+            <div class="space-x-4 text-sm font-medium text-blue-600">
+                <a href="#" class="hover:underline text-gray-800">Mi Inventario</a>
+                <a href="#" class="hover:underline">Ventas FLOW</a>
+                <a href="index.html" class="text-red-500 hover:underline">Cerrar Sesión</a>
+            </div>
+        </div>
+
+        <div class="flex justify-between items-center mb-6">
+            <button class="bg-white border border-gray-300 hover:bg-gray-50 text-gray-800 font-bold py-2 px-6 rounded-lg shadow-sm">
+                + Agregar Producto
+            </button>
+            <div class="flex items-center gap-2">
+                <label class="font-medium text-gray-700">Producto:</label>
+                <input type="text" placeholder="🔍 Productos" class="px-4 py-2 border border-gray-300 rounded-full shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+        </div>
+
+        <div class="bg-white rounded-xl shadow overflow-hidden border border-gray-200">
+            <table class="w-full text-left border-collapse">
+                <thead class="bg-gray-100 text-gray-700 border-b-2 border-gray-200">
+                    <tr>
+                        <th class="py-3 px-4 font-bold border-r border-gray-200">#</th>
+                        <th class="py-3 px-4 font-bold border-r border-gray-200">Nombre</th>
+                        <th class="py-3 px-4 font-bold border-r border-gray-200">Stock</th>
+                        <th class="py-3 px-4 font-bold border-r border-gray-200">Precio Unitario</th>
+                        <th class="py-3 px-4 font-bold">Accion</th>
+                    </tr>
+                </thead>
+                <tbody class="text-gray-600">
+                    <tr class="hover:bg-gray-50 border-b border-gray-100">
+                        <td class="py-3 px-4 border-r border-gray-100">1</td>
+                        <td class="py-3 px-4 font-medium text-gray-800 border-r border-gray-100">Street Pulse Hoodie</td>
+                        <td class="py-3 px-4 border-r border-gray-100 text-center">25</td>
+                        <td class="py-3 px-4 border-r border-gray-100">$3500</td>
+                        <td class="py-3 px-4 text-blue-600 cursor-pointer hover:underline text-center">[Editar]</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50 border-b border-gray-100 bg-gray-50/50">
+                        <td class="py-3 px-4 border-r border-gray-100">2</td>
+                        <td class="py-3 px-4 font-medium text-gray-800 border-r border-gray-100">Urban Shadow Jacket</td>
+                        <td class="py-3 px-4 border-r border-gray-100 text-center">10</td>
+                        <td class="py-3 px-4 border-r border-gray-100">$4000</td>
+                        <td class="py-3 px-4 text-blue-600 cursor-pointer hover:underline text-center">[Editar]</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50 border-b border-gray-100">
+                        <td class="py-3 px-4 border-r border-gray-100">3</td>
+                        <td class="py-3 px-4 font-medium text-gray-800 border-r border-gray-100">Neon Splash Tee</td>
+                        <td class="py-3 px-4 border-r border-gray-100 text-center">5</td>
+                        <td class="py-3 px-4 border-r border-gray-100">$5500</td>
+                        <td class="py-3 px-4 text-blue-600 cursor-pointer hover:underline text-center">[Editar]</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50 border-b border-gray-100 bg-gray-50/50">
+                        <td class="py-3 px-4 border-r border-gray-100">4</td>
+                        <td class="py-3 px-4 font-medium text-gray-800 border-r border-gray-100">Night Walker Jeans</td>
+                        <td class="py-3 px-4 border-r border-gray-100 text-center">30</td>
+                        <td class="py-3 px-4 border-r border-gray-100">$7000</td>
+                        <td class="py-3 px-4 text-blue-600 cursor-pointer hover:underline text-center">[Editar]</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50 border-b border-gray-100">
+                        <td class="py-3 px-4 border-r border-gray-100">5</td>
+                        <td class="py-3 px-4 font-medium text-gray-800 border-r border-gray-100">Retro High Sneakers</td>
+                        <td class="py-3 px-4 border-r border-gray-100 text-center">45</td>
+                        <td class="py-3 px-4 border-r border-gray-100">$10000</td>
+                        <td class="py-3 px-4 text-blue-600 cursor-pointer hover:underline text-center">[Editar]</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-400 text-center py-4 text-sm mt-auto">
+        &copy; 2026 PymeConecta
+    </footer>
+</body>
+</html>

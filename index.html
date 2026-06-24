@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PymeConecta - Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen fade-in">
+
+    <!-- Navbar[cite: 9] -->
+    <nav class="bg-blue-900 text-white shadow-md">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold tracking-wider">PymeConecta</a>
+            <div class="space-x-6 text-sm font-medium">
+                <a href="tiendas.html" class="hover:text-blue-300 transition">Ver Tiendas</a>
+                <a href="registro.html" class="bg-blue-600 hover:bg-blue-500 px-4 py-2 rounded-md transition shadow">Registrar Pyme</a>
+                <a href="#" class="hover:text-blue-300 transition">Ingresar</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="flex-grow max-w-6xl mx-auto w-full p-6 mt-8">
+        <div class="mb-8">
+            <input type="text" placeholder="¿Qué buscas en Puente Alto hoy?" class="w-full max-w-lg px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-blue-500 focus:outline-none">
+        </div>
+
+        <h1 class="text-4xl font-bold text-gray-900 mb-8 border-b pb-4">Lo mejor de Puente Alto en tu puerta</h1>
+        
+        <h2 class="text-2xl font-semibold mb-6">Lo más vendido hoy</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            <div class="bg-white p-4 rounded-xl shadow-md border border-gray-100 text-center hover:shadow-lg transition">
+                <div class="h-40 bg-gray-200 rounded-lg mb-4 flex items-center justify-center text-gray-400 font-bold">Img</div>
+                <h3 class="font-bold text-lg">Alfajores Artesanales</h3>
+                <p class="text-blue-600 font-bold text-xl">$5000</p>
+            </div>
+            <div class="bg-white p-4 rounded-xl shadow-md border border-gray-100 text-center hover:shadow-lg transition">
+                <div class="h-40 bg-gray-200 rounded-lg mb-4 flex items-center justify-center text-gray-400 font-bold">Img</div>
+                <h3 class="font-bold text-lg">Miel Artesanal</h3>
+                <p class="text-blue-600 font-bold text-xl">$7500</p>
+            </div>
+            <div class="bg-white p-4 rounded-xl shadow-md border border-gray-100 text-center hover:shadow-lg transition">
+                <div class="h-40 bg-gray-200 rounded-lg mb-4 flex items-center justify-center text-gray-400 font-bold">Img</div>
+                <h3 class="font-bold text-lg">Pelota Mundial 2026</h3>
+                <p class="text-blue-600 font-bold text-xl">$4500</p>
+            </div>
+        </div>
+
+        <h2 class="text-2xl font-semibold mb-6">Explora por Categorías</h2>
+        <div class="flex flex-wrap gap-4">
+            <span class="px-6 py-2 bg-white border border-gray-300 rounded-full font-medium shadow-sm cursor-pointer hover:bg-gray-50">Comida Rápida</span>
+            <span class="px-6 py-2 bg-white border border-gray-300 rounded-full font-medium shadow-sm cursor-pointer hover:bg-gray-50">Artesanías</span>
+            <span class="px-6 py-2 bg-white border border-gray-300 rounded-full font-medium shadow-sm cursor-pointer hover:bg-gray-50">Tecnología</span>
+            <span class="px-6 py-2 bg-white border border-gray-300 rounded-full font-medium shadow-sm cursor-pointer hover:bg-gray-50">Ropa y Accesorios</span>
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-400 text-center py-4 text-sm mt-auto">
+        &copy; 2026 PymeConecta - Impulsando el comercio local en Puente Alto.
+    </footer>
+</body>
+</html>

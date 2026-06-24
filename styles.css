@@ -1,0 +1,22 @@
+/* styles.css */
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.fade-in {
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* Simulación de mapa interactivo */
+.map-placeholder {
+    background: url('https://www.transparenttextures.com/patterns/cubes.png'), linear-gradient(135deg, #e2e8f0 0%, #cbd5e1 100%);
+}
