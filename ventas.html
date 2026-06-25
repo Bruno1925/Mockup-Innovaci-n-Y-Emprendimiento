@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PymeConecta - Ventas FLOW</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen fade-in">
+
+    <nav class="bg-blue-900 text-white shadow-md">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold tracking-wider">PymeConecta</a>
+        </div>
+    </nav>
+
+    <main class="flex-grow max-w-6xl mx-auto w-full p-6 mt-8">
+        <div class="flex justify-between items-center mb-8 border-b pb-4">
+            <h1 class="text-3xl font-bold text-gray-800">Transacciones FLOW</h1>
+            <div class="space-x-4 text-sm font-medium text-blue-600">
+                <a href="dashboard.html" class="hover:underline">Mi Inventario</a>
+                <a href="ventas.html" class="text-gray-800 hover:underline">Ventas FLOW</a>
+                <a href="index.html" class="text-red-500 hover:underline">Cerrar Sesión</a>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-xl shadow overflow-hidden border border-gray-200">
+            <table class="w-full text-left border-collapse">
+                <thead class="bg-gray-100 text-gray-700 border-b-2 border-gray-200">
+                    <tr>
+                        <th class="py-3 px-4 font-bold border-r border-gray-200">ID Orden</th>
+                        <th class="py-3 px-4 font-bold border-r border-gray-200">Fecha</th>
+                        <th class="py-3 px-4 font-bold border-r border-gray-200">Monto</th>
+                        <th class="py-3 px-4 font-bold border-r border-gray-200">Estado FLOW</th>
+                        <th class="py-3 px-4 font-bold">Cliente</th>
+                    </tr>
+                </thead>
+                <tbody class="text-gray-600">
+                    <tr class="hover:bg-gray-50 border-b border-gray-100">
+                        <td class="py-3 px-4 font-mono text-xs">#PYM-9921</td>
+                        <td class="py-3 px-4">15/06/2026</td>
+                        <td class="py-3 px-4 font-bold">$10.500</td>
+                        <td class="py-3 px-4"><span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-bold">PAGADO</span></td>
+                        <td class="py-3 px-4">Juan Pérez</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50 border-b border-gray-100">
+                        <td class="py-3 px-4 font-mono text-xs">#PYM-9922</td>
+                        <td class="py-3 px-4">15/06/2026</td>
+                        <td class="py-3 px-4 font-bold">$4.000</td>
+                        <td class="py-3 px-4"><span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded text-xs font-bold">PENDIENTE</span></td>
+                        <td class="py-3 px-4">María López</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-400 text-center py-4 text-sm mt-auto">
+        &copy; 2026 PymeConecta
+    </footer>
+</body>
+</html>
